@@ -1,0 +1,514 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+
+    #list {
+        display: flex;
+        justify-content: center;
+        line-height: 42px;
+    }
+
+    .list {
+        list-style: none;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.92);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    .link {
+        text-decoration: none;
+        padding: 0px 20px;
+        align-items: center;
+        color: #d4d4df;
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: -.01em;
+    }
+
+    .link:hover {
+        color: white;
+    }
+
+    .offer {
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        background-color: rgb(245, 245, 245);
+        line-height: 64px;
+        padding-top: 17px;
+    }
+
+    #new {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.92);
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+
+
+    .learn {
+        text-decoration: none;
+    }
+
+    .i13 {
+        font-weight: bold;
+        font-size: 55px;
+        color: rgba(0, 0, 0, 0.92);
+    }
+
+    .super {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.92);
+    }
+
+    .image {
+        text-decoration: none;
+        border: none;
+    }
+
+    .imgmac {
+        transition: all 0.5s;
+        padding-bottom: 0.5vmax;
+        width: 45rem;
+        height: 30rem;
+
+
+    }
+
+    .imgmac:hover {
+        box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+        transform: translateY(0.6vmax);
+    }
+
+
+    .learn5 {
+        position: absolute;
+        top: 65vw;
+        left: 43%;
+        margin-top: 30px;
+    }
+
+    .buy5 {
+        position: absolute;
+        left: 52%;
+        top: 65vw;
+        margin-top: 30px;
+    }
+
+    #third {
+        margin-top: 50px;
+    }
+
+    .watch {
+        text-decoration: none;
+    }
+
+    .ww {
+        line-height: 50px;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.92);
+        margin-bottom: 40px;
+    }
+
+    .airpod {
+        text-decoration: none;
+    }
+
+    .order1 {
+        margin-top: 7px;
+        margin-bottom: 10px;
+
+    }
+
+    .order1 a {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .linker:hover {
+        text-decoration: underline;
+    }
+
+    #forth {
+        margin-top: 50px;
+    }
+
+    .get {
+        line-height: 60px;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.92);
+    }
+
+    .air {
+        font-size: 28px;
+        color: rgba(0, 0, 0, 0.92);
+
+    }
+
+    .shop {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .shop a {
+        font-size: 23px;
+    }
+
+    #color {
+        color: rgb(200, 30, 85);
+    }
+
+    .small {
+        font-size: 15px;
+    }
+
+    .mac {
+        text-decoration: none;
+    }
+
+    #fifth {
+        margin: 0px 50px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+
+    .macbook {
+        margin-left: 150px;
+        margin-top: 100px;
+        line-height: 60px;
+        font-size: 38px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.92);
+    }
+
+    .m2 {
+
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.92);
+    }
+
+    .m2 img {
+        width: 34px;
+        position: absolute;
+    }
+
+    .img13 {
+        height: 500px;
+        border: 1 px solid black;
+    }
+
+    .order {
+        font-size: 18px;
+        color: grey;
+        margin-bottom: 20px;
+    }
+
+    .learn3 {
+        position: absolute;
+        left: 12%;
+        margin-top: 200px;
+
+
+    }
+
+
+
+    .buy3 {
+        position: absolute;
+        left: 21%;
+        margin-top: 200px;
+    }
+
+    .m21 {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.92);
+        margin-left: 139px;
+    }
+
+    .pro {
+        text-decoration: none;
+
+    }
+
+    .i13pro {
+        margin-left: 160px;
+        margin-top: 100px;
+
+        line-height: 60px;
+        font-size: 38px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.92);
+    }
+
+    .oh {
+        margin-left: 230px;
+        margin-bottom: 10px;
+
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.92);
+    }
+
+    .learn4 {
+        position: absolute;
+        left: 64%;
+        top: 136vw;
+        margin-top: 180px;
+
+
+    }
+
+
+    .buy4 {
+        position: absolute;
+        left: 73%;
+        top: 136vw;
+        margin-top: 180px;
+    }
+
+    #sixth {
+        margin: 5px 50px;
+        display: flex;
+
+        justify-content: space-around;
+        margin: 0px;
+
+
+    }
+
+    .macpro {
+        margin: 10px;
+        background-color: black;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: 54%;
+
+    }
+
+    .macbookpro {
+        margin-left: 150px;
+        margin-top: 100px;
+        line-height: 60px;
+        font-size: 38px;
+        font-weight: bold;
+        color: white;
+    }
+
+
+    .m2pro {
+        margin-left: 200px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .m2pro img {
+        width: 34px;
+        position: absolute;
+    }
+
+    .learn {
+        position: absolute;
+        left: 15%;
+        top: 192vw;
+        margin-top: 35px;
+
+    }
+
+    .buy {
+        position: absolute;
+        left: 24%;
+        top: 193.3vw;
+        margin-top: 35px;
+
+
+    }
+
+
+    .linker {
+        text-decoration: none;
+        color: #2779ff;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+
+
+    .learn a:hover {
+        text-decoration: underline;
+    }
+
+    .buy a:hover {
+        text-decoration: underline;
+    }
+
+    .ipadair {
+        margin-left: 280px;
+        margin-top: 100px;
+        line-height: 60px;
+        font-size: 38px;
+        font-weight: bold;
+
+    }
+
+    .pad {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+
+    .light {
+        color: white;
+        margin-left: 230px;
+        font-size: 20px;
+    }
+
+    .padpro {
+        background-color: black;
+        margin: 10px;
+    }
+
+    .pad em {
+        color: rgb(110, 140, 220);
+    }
+
+    .learn2 {
+        position: absolute;
+        left: 67%;
+        top: 193vw;
+        margin-top: 40px;
+
+    }
+
+    .learn2:hover {
+        text-decoration: underline;
+    }
+
+    .buy2 {
+        position: absolute;
+        left: 76%;
+        top: 193vw;
+        margin-top: 40px;
+    }
+
+    .buy2:hover {
+        text-decoration: underline;
+    }
+
+    .free {
+        position: absolute;
+        left: 20%;
+        margin-top: 138px;
+    }
+
+    .free span {
+        font-size: 20px;
+    }
+
+    #seventh {
+        margin: 5px 50px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+
+    .acr {
+        margin: 10px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.92);
+        font-size: 20px;
+    }
+
+    .acrlogo {
+        margin-left: 180px;
+        margin-top: 50px;
+    }
+
+    .cooking {
+        line-height: 40px;
+        margin-left: 150px;
+    }
+
+    .tvplus {
+        margin-top: 50px;
+    }
+
+    .note {
+        color: #6e6e73;
+        background-color: rgb(245, 245, 245);
+        padding: 20px 160px;
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 400;
+        letter-spacing: -.01em;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer li {
+        list-style: none;
+        margin-top: 4px;
+        font-size: 13px;
+
+    }
+
+    .headings {
+
+        color: rgb(69, 66, 66);
+        font-weight: 100;
+    }
+
+    .outer {
+        height: 23rem;
+    }
+
+    .inner {
+        padding-top: 40px;
+
+    }
+
+    .footp {
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+
+    .footp a {
+        font-size: 13px;
+    }
+
+    .lastfoot {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1px;
+    }
+
+    .div2 ul {
+        display: flex;
+
+    }
+
+    .div2 li {
+        list-style: none;
+        margin-left: 10px;
+        font-weight: 200;
+        color: black;
+    }

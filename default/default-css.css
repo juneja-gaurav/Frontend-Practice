@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col_1 {
+    width: 8.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_2 {
+    width: 16.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_4 {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_5 {
+    width: 41.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_7 {
+    width: 58.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_8 {
+    width: 66.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_9 {
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_10 {
+    width: 83.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_11 {
+    width: 91.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col_12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.containar {
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 1152px; */
+}
+
+.position_absolute {
+    position: absolute;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.align_iten_center {
+    align-items: center;
+}
+
+.justify_content_space_between {
+    justify-content: space-between;
+}
+
+.justify_content_space_around {
+    justify-content: space-around;
+}
+
+.justify_content_flex_end {
+    justify-content: flex-end;
+}
+
+.flex_direction_colum {
+    flex-direction: column;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.text_aline_cener {
+    text-align: center;
+}
+
+.text_aline_right {
+    text-align: right;
+}
+
+.font_color_white {
+    color: #F7F7F7;
+}

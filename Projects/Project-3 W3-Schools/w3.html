@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Tutorial</title>
+    <link rel="icon" href="w3logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Source+Sans+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Source Sans Pro', sans-serif;
+            list-style-type: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .d_flex {
+            display: flex;
+        }
+
+        #logo {
+            margin-top: -3.5px;
+            margin-left: 8.5px;
+            padding: 20px 20px 0px 20px;
+        }
+
+        .secondnav {
+            display: flex;
+            width: 100%;
+            background-color: #282A35;
+            position: sticky;
+            top: 0%;
+            z-index: 99;
+        }
+
+        .leftside {
+            width: 80%;
+        }
+
+        .left {
+            display: flex;
+            width: 70%
+        }
+
+        .middle {
+            display: flex;
+            width: 90%;
+        }
+
+        .right {
+            display: flex;
+            width: 55%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .pro {
+            font: 18px;
+            font-family: "Source Sans Pro", "sans-serif";
+            background-color: #282A35;
+            color: #ffffff;
+            margin: 0px 15px 0px 0px;
+        }
+
+        .pro:hover {
+            background-color: #04AA6D;
+        }
+
+        .pro span {
+            color: black;
+            font-size: 12px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 45px;
+            padding: 2px 10px;
+        }
+
+        .leftlink {
+            padding: 26px 15.5px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .rightlink {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: "Source Sans Pro", "sans-serif";
+            justify-content: center;
+            border-radius: 45px;
+            padding: 10px 20px;
+        }
+
+        .web {
+            padding: 10px 30px;
+            margin: 0px 5px;
+            color: #000000;
+        }
+
+        .web:hover {
+            color: white;
+            background-color: #04AA6D;
+        }
+
+        .login {
+            color: #ffffff;
+            background-color: #04AA6D;
+            padding: 10px 42px;
+        }
+
+        .login:hover {
+            background-color: #049b64;
+        }
+
+        .get {
+            background-color: #FFC0C7;
+            color: #000000;
+        }
+
+        .get:hover {
+            color: white;
+            background-color: #04AA6D;
+        }
+
+        .leftlink:hover {
+            color: white;
+            background-color: #04AA6D;
+        }
+
+        .leftside {
+            display: flex;
+        }
+
+        .rightside {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+
+        .rightside a:hover {
+            background-color: black;
+        }
+
+        .rightside a i {
+            padding: 0 0.5rem;
+        }
+
+        .link {
+            padding: 10px 15px;
+            background-color: #282A35;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+            color: #f1f1f1;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .icon {
+            color: #eee;
+            background-color: #282A35;
+            padding: 10px;
+        }
+
+        .sidebar {
+            background-color: #E7E9EB;
+            padding-top: 17px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 220px;
+            height: 90vh;
+            margin: 0px;
+            position: sticky;
+            top: 7%;
+        }
+
+        .barheading {
+            padding: 2px 1px 1px 16px;
+        }
+
+        .lsb {
+            color: black;
+            padding: 2px 1px 1px 16px;
+            text-decoration: none;
+            line-height: 1.5;
+            font-size: 15px;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        .lsb:hover {
+            background-color: rgb(200, 200, 200);
+        }
+
+        .lsb:hover {
+            background-color: rgb(200, 200, 200);
+        }
+
+        .mainbody {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .heading1 {
+            font-size: 50px;
+            color: #000000;
+            margin: 2rem 2rem;
+            font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+            font-weight: 400;
+        }
+
+        .heading2 {
+            font-size: 32px;
+            color: #000000;
+            margin: 1rem 2rem;
+            font-family: 'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+            font-weight: 400;
+        }
+
+        .navigate {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigate a {
+            padding: 9px 18px;
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        .navigate a:hover {
+            background-color: #049b64;
+        }
+
+        .buttons {
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #04AA6D;
+            border-radius: 6px;
+        }
+
+        .second {
+            width: 80%;
+        }
+
+        .desc {
+            background-color: #D9EEE1;
+            padding: 32px;
+            margin: 24px 32px;
+            margin-left: 0px;
+
+        }
+
+        .desc p {
+            color: #000000;
+            font-size: 15px;
+            font-family: 'Verdana', 'sans-serif';
+            Margin: 18px 0px;
+            padding-left: 12px;
+        }
+
+        .Study {
+            margin-top: 27px;
+            padding-left: 10px;
+        }
+
+        .Study a {
+            font-size: 18px;
+            padding: 8px 19px;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 6px 0px 16px;
+        }
+
+        .Study a:hover {
+            background-color: #049b64;
+        }
+
+        .free {
+            background-color: #FFF4A3;
+            font-size: 14px;
+            font-family: 'Source Sans Pro', 'sans-serif';
+            padding: 4px 12px;
+            color: #000000;
+            position: absolute;
+            z-index: 1;
+            transform: rotate(-20deg);
+            text-align: center;
+            border: none;
+            border-radius: 30px;
+        }
+
+        .Videodiv {
+            margin-bottom: 35px;
+            margin-top: 20px;
+            padding-left: 0px;
+        }
+
+        .Videodiv a {
+            margin: 6px 0px 16px;
+        }
+
+        .Videodiv a:hover {
+            background-color: #000000;
+        }
+
+        .video {
+            color: #ffffff;
+            background-color: #282A35;
+            padding: 9px 50px;
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            border-radius: 6px;
+            position: relative;
+            overflow: visible;
+            top: 22px;
+            left: 14px;
+        }
+
+        hr {
+            margin: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .try {
+            color: black;
+            margin-left: 2rem;
+            max-width: fit-content;
+            font-family: 'Verdana', 'sans-serif';
+        }
+
+        .example {
+            font-size: 32px;
+            background-color: #E7E9EB;
+            border-radius: 8px;
+            margin: 2rem 1rem;
+            padding: 20px;
+        }
+
+        .example1 {
+            padding-top: 40px;
+            color: white;
+            background-color: #282A35;
+            height: 70vh;
+        }
+
+        .exambox {
+            line-height: 1.5;
+            padding: 8px 16px;
+            font-size: 15px;
+            margin-top: 20px;
+            background-color: white;
+            border-left: 4px solid #04AA6D;
+        }
+
+        .exambox1 {
+            height: 52vh;
+            border: none;
+            padding: 8px 0px;
+        }
+
+        .exambox2 {
+            font-size: 18px;
+            color: black;
+            padding: 20px;
+            margin: 20px 30px;
+            background-color: #E7E9EB;
+        }
+
+        .ltgt,
+        .tagname,
+        .exambody,
+        .exambox2,
+        #text {
+            font-family: Consolas, Menlo, "courier new", monospace;
+        }
+
+        .ltgt {
+            color: mediumblue;
+        }
+
+        .tagname {
+            color: brown;
+        }
+
+        .examhtml a {
+            color: #000000;
+            background-color: #E7E9EB;
+        }
+
+        .examhtml a:hover {
+            color: white;
+        }
+
+        #text {
+            width: 50px;
+            height: 25px;
+            border: none;
+            font-size: 18px;
+        }
+
+        .exerlink {
+            font-family: 'Verdana', 'sans-serif';
+            color: black;
+            margin: 2rem 1rem;
+        }
+
+        .exerlink:hover {
+            color: #04AA6D;
+        }
+
+        .quizhtml a {
+            margin: 1rem;
+            background-color: #2196F3;
+        }
+
+        .quizhtml a:hover {
+            background-color: #128df3;
+        }
+
+        .refer {
+            margin-top: 1rem;
+            justify-content: center;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .seventh {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .references {
+            font-family: 'Verdana', 'sans-serif';
+            color: #000000;
+            text-decoration: none;
+            background-color: #E7E9EB;
+            padding: 1.2rem 4rem;
+            margin: 0.7rem;
+            border-radius: 5%;
+            width: 18%;
+            text-align: center;
+        }
+
+        .references:hover {
+            background-color: #000000;
+            color: white;
+        }
+
+        .kickbox {
+            border-radius: 20px;
+            margin-left: 4rem;
+            margin-right: 4rem;
+        }
+
+        .kick {
+            color: pink;
+            font-size: 3.3rem;
+            padding: 30px 50px;
+        }
+
+        .kicktext {
+            font-size: 2.5rem;
+        }
+
+        .kickbtn {
+            border-radius: 20px;
+            margin: 2rem;
+        }
+
+        .kickbtn a {
+            border-radius: 40px;
+            padding: 1rem 3rem;
+        }
+
+        .navigate2 a {
+            margin: 4rem;
+        }
+
+        .references2 {
+            width: 8.2rem;
+            padding: 0.5rem 3rem;
+        }
+
+        .ninth {
+            display: flex;
+            margin: 2rem 2rem;
+            text-align: center;
+        }
+
+        .footbox {
+            margin: auto;
+        }
+
+        .foothead {
+            margin-bottom: 1rem;
+        }
+
+        .footlink {
+            text-decoration: none;
+            color: #000000;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: center;
+            font-family: 'Verdana', 'sans-serif';
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footlink:hover {
+            color: #04AA6D;
+            text-decoration: underline;
+        }
+
+        .footbtn {
+            text-align: right;
+        }
+
+        .footbtn a {
+            margin-right: 2.5rem;
+            font-family: 'Verdana', 'sans-serif';
+            border-radius: 5px;
+            padding: 0.6rem 0.8rem;
+            background-color: #282A35;
+            color: white;
+            font-size: 12px;
+        }
+
+        .footbtn a:hover {
+            background-color: #000000;
+        }
+
+        .footer {
+            padding: 0rem 1rem;
+            font-family: 'Verdana', 'sans-serif';
+            color: gray;
+            font-size: 12px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .footlogo {
+            padding-top: 1rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            color: #000000;
+            background-color: white;
+            display: block;
+            width: 34px;
+            border: 1px solid black;
+            height: 3px;
+            margin: 5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .dropbtn {
+            cursor: pointer;
+            color: white;
+            background-color: #04AA6D;
+            margin-left: 0px;
+            width: 6rem;
+            border: none;
+            font-size: 19px;
+            height: 100%;
+            display: none;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #049b64;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            align-items: center;
+            display: none;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 16px 16px;
+            text-decoration: none;
+            display: block;
+            right: 0%;
+        }
+
+        .dropdown-content {
+            width: 100vw;
+            position: absolute;
+            left: 0%;
+            display: none;
+            background-color: #f1f1f1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
+            display: block;
+        }
+
+        @media screen and (max-width: 650px) {
+            .sidebar {
+                display: none;
+            }
+
+            .second {
+                width: 100%;
+            }
+
+            .mainbody {
+                display: block;
+                width: 100%;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            .web {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .kickbox {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+
+        }
+
+        @media screen and (max-width: 475px) {
+            .kicktext {
+                font-size: 2rem;
+            }
+        }
+
+
+        @media screen and (max-width: 950px) {
+            .get {
+                display: none;
+            }
+
+
+        }
+
+        @media screen and (max-width: 905px) {
+            .navbar {
+                height: 65px;
+            }
+
+            .middle {
+                display: none;
+            }
+
+            .dropbtn {
+                display: block;
+            }
+
+            .dropdown {
+                display: inline-block;
+            }
+
+            .dropbtn {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 1250px) {
+
+            .pro {
+                display: none;
+            }
+
+            .login {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(47deg);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-47deg);
+            }
+
+            .secondnav {
+                display: flex;
+                position: sticky;
+                top: 0%;
+                justify-content: space-between;
+                background-color: #282A35;
+            }
+
+            .leftside {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: #282A35;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+            }
+
+            .link {
+                padding: 0%;
+            }
+
+            .leftside a {
+                margin: 16px 0;
+            }
+
+            .leftside.active {
+                left: 0%;
+            }
+
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/0b156822f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="navbar">
+                <div class="left">
+                    <div id="logo">
+                        <a href="">
+                            <img src="w3logo.png" alt="" width="44px" height="42px">
+                        </a>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Tutorials</a>
+                            <a href="#">References</a>
+                            <a href="#">Exercises</a>
+                            <a href="#">Videos</a>
+                            <a href="#">Get Certified</a>
+                        </div>
+                    </div>
+
+                    <div class="middle">
+                        <a href="" class="leftlink">Tutorials <i class="fa-solid fa-caret-down"
+                                style="font-size: 18px;"></i></a>
+                        <a href="" class="leftlink">References <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="" class="leftlink">Exercises <i class="fa-solid fa-caret-down"></i></a>
+                        <a href="" class="leftlink">Videos</a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <a href="" class="pro rightlink">
+                        Pro
+                        <span>NEW</span>
+                    </a>
+                    <a href="" class="get rightlink">Get Certified</a>
+                    <a href="" class="web rightlink">Website</a>
+                    <a href="" class="login rightlink">Log in</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="secondnav">
+        <div class="leftside">
+            <a class="link" href="#"><i class="fa-solid fa-house-chimney"></i></a>
+            <a class="link" href="#">HTML</a>
+            <a class="link" href="#">CSS</a>
+            <a class="link" href="#">JAVASCRIPT</a>
+            <a class="link" href="#">SQL</a>
+            <a class="link" href="#">PYTHON</a>
+            <a class="link" href="#">PHP</a>
+            <a class="link" href="#">BOOTSTRAP</a>
+            <a class="link" href="#">HOW TO</a>
+            <a class="link" href="#">W3.CSS</a>
+            <a class="link" href="#">JAVA</a>
+            <a class="link" href="#">JQUERY</a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+
+        <div class="rightside">
+            <a class="icon" href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            <a class="icon" href="#"><i class="fa-solid fa-earth-asia"></i></a>
+            <a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+
+    <section class="mainbody">
+
+        <div class="sidebar">
+            <h2 class="barheading">HTML Tutorial</h2>
+            <a class="lsb" href="#">HTML HOME</a>
+            <a class="lsb" href="#">HTML Introduction</a>
+            <a class="lsb" href="#">HTML Editors</a>
+            <a class="lsb" href="#">HTML Basic</a>
+            <a class="lsb" href="#">HTML Elements</a>
+            <a class="lsb" href="#">HTML Attributes</a>
+            <a class="lsb" href="#">HTML Headings</a>
+            <a class="lsb" href="#">HTML Paragraphs</a>
+            <a class="lsb" href="#">HTML Styles</a>
+            <a class="lsb" href="#">HTML Formatting</a>
+            <a class="lsb" href="#">HTML Quotations</a>
+            <a class="lsb" href="#">HTML Comments</a>
+            <a class="lsb" href="#">HTML Colors</a>
+            <a class="lsb" href="#">HTML CSS</a>
+            <a class="lsb" href="#">HTML Links</a>
+            <a class="lsb" href="#">HTML Images</a>
+            <a class="lsb" href="#">HTML Favicon</a>
+            <a class="lsb" href="#">HTML Tables</a>
+            <a class="lsb" href="#">HTML Lists</a>
+            <a class="lsb" href="#">HTML Block & Inline</a>
+            <a class="lsb" href="#">HTML Classes</a>
+            <a class="lsb" href="#">HTML Id</a>
+            <a class="lsb" href="#">HTML Iframes</a>
+            <a class="lsb" href="#">HTML JavaScript</a>
+            <a class="lsb" href="#">HTML File Paths</a>
+            <a class="lsb" href="#">HTML Head</a>
+            <a class="lsb" href="#">HTML Layout</a>
+            <a class="lsb" href="#">HTML Responsive</a>
+            <a class="lsb" href="#">HTML Computercode</a>
+            <a class="lsb" href="#">HTML Semantics</a>
+            <a class="lsb" href="#">HTML Style Guide</a>
+            <a class="lsb" href="#">HTML Entities</a>
+            <a class="lsb" href="#">HTML Symbols</a>
+            <a class="lsb" href="#">HTML Emojis</a>
+            <a class="lsb" href="#">HTML Charset</a>
+            <a class="lsb" href="#">HTML URL Encode</a>
+            <a class="lsb" href="#">HTML vs. XHTML</a>
+            <br>
+            <h2 class="barheading">HTML Forms</h2>
+            <a href="#" class="lsb">HTML Forms</a>
+            <a href="#" class="lsb">HTML Form Attributes</a>
+            <a href="#" class="lsb">HTML Form Elements</a>
+            <a href="#" class="lsb">HTML Input Types</a>
+            <a href="#" class="lsb">HTML Input Attributes</a>
+            <a href="#" class="lsb">HTML Input Form Attributes</a>
+            <br>
+            <h2 class="barheading">HTML Graphics</h2>
+            <a href="#" class="lsb">HTML Canvas</a>
+            <a href="#" class="lsb">HTML SVG</a>
+            <br>
+            <h2 class="barheading">HTML Media</h2>
+            <a href="#" class="lsb">HTML Media</a>
+            <a href="#" class="lsb">HTML Video</a>
+            <a href="#" class="lsb">HTML Audio</a>
+            <a href="#" class="lsb">HTML Plug-ins</a>
+            <a href="#" class="lsb">HTML YouTube</a>
+            <br>
+            <h2 class="barheading">HTML APIs</h2>
+            <a href="#" class="lsb">HTML Geolocation</a>
+            <a href="#" class="lsb">HTML Drag/Drop</a>
+            <a href="#" class="lsb">HTML Web Storage</a>
+            <a href="#" class="lsb">HTML Web Workers</a>
+            <a href="#" class="lsb">HTML SSE</a>
+            <br>
+            <h2 class="barheading">HTML Examples</h2>
+            <a href="#" class="lsb">HTML Examples</a>
+            <a href="#" class="lsb">HTML Quiz</a>
+            <a href="#" class="lsb">HTML Exercises</a>
+            <a href="#" class="lsb">HTML Certificate</a>
+            <a href="#" class="lsb">HTML Summary</a>
+            <a href="#" class="lsb">HTML Accessibility</a>
+            <br>
+            <h2 class="barheading">HTML References</h2>
+            <a href="#" class="lsb">HTML Tag List</a>
+            <a href="#" class="lsb">HTML Attributes</a>
+            <a href="#" class="lsb">HTML Global Attributes</a>
+            <a href="#" class="lsb">HTML Browser Support</a>
+            <a href="#" class="lsb">HTML Events</a>
+            <a href="#" class="lsb">HTML Colors</a>
+            <a href="#" class="lsb">HTML Canvas</a>
+            <a href="#" class="lsb">HTML Audio/Video</a>
+            <a href="#" class="lsb">HTML Doctypes</a>
+            <a href="#" class="lsb">HTML Character Sets</a>
+            <a href="#" class="lsb">HTML URL Encode</a>
+            <a href="#" class="lsb">HTML Lang Codes</a>
+            <a href="#" class="lsb">HTTP Messages</a>
+            <a href="#" class="lsb">HTTP Methods</a>
+            <a href="#" class="lsb">PX to EM Converter</a>
+            <a href="#" class="lsb">Keyboard Shortcuts</a>
+            <br>
+        </div>
+
+        <div class="second">
+            <h1 class="heading1">HTML Tutorial</h1>
+            <div class="navigate">
+                <a href="" class="buttons">
+                    &lt; Home</a>
+                <a href="" class="buttons">Next &gt;</a>
+            </div>
+            <div class="desc">
+                <p>
+                    HTML is the standard markup language for Web pages.
+                </p>
+                <p>
+                    With HTML you can create your own Website.
+                </p>
+                <p>
+                    HTML is easy to learn - You will enjoy it!
+                </p>
+                <div class="Study">
+                    <a href="" class="buttons">Study our free HTML Tutorials >></a><br>
+                </div>
+                <div class="Videodiv Study">
+                    <button disabled class="free">NEW</button>
+                    <a href="https://www.w3schools.com/videos/index.php" class="video">
+                        Watch our Video Tutorial >>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="third">
+                <h1 class="heading1 heading2">Easy Learning with HTML "Try it Yourself"</h1>
+                <div class="try">
+                    With our "Try it Yourself" editor, you can edit the HTML code and view the result:
+                </div>
+                <div class="example">
+                    Example
+                    <div class="exambox">
+                        <span class="ltgt">
+                            << /span>
+                                <span class="tagname">!DOCTYPE</span>
+                                <span style="color: red; font-family: Consolas,Menlo,courier new,monospace;">html</span>
+                                <span class="ltgt">></span>
+                                <br>
+                                <span class="ltgt">
+                                    << /span>
+                                        <span class="tagname">html</span>
+                                        <span class="ltgt">></span>
+                                        <br>
+                                        <span class="ltgt">
+                                            << /span>
+                                                <span class="tagname">head</span>
+                                                <span class="ltgt">></span>
+                                                <br>
+                                                <span class="ltgt">
+                                                    << /span>
+                                                        <span class="tagname">title</span>
+                                                        <span class="ltgt">></span>
+                                                        <span class="exambody">Page Title</span>
+                                                        <span class="ltgt">
+                                                            << /span>
+                                                                <span class="tagname">/title</span>
+                                                                <span class="ltgt">></span>
+                                                                <br>
+                                                                <span class="ltgt">
+                                                                    << /span>
+                                                                        <span class="tagname">/head</span>
+                                                                        <span class="ltgt">></span>
+                                                                        <br>
+                                                                        <span class="ltgt">
+                                                                            << /span>
+                                                                                <span class="tagname">body</span>
+                                                                                <span class="ltgt">></span>
+                                                                                <br>
+                                                                                <br>
+                                                                                <span class="ltgt">
+                                                                                    << /span>
+                                                                                        <span class="tagname">h1</span>
+                                                                                        <span class="ltgt">></span>
+                                                                                        <span class="exambody">This is a
+                                                                                            Heading</span>
+                                                                                        <span class="ltgt">
+                                                                                            << /span>
+                                                                                                <span
+                                                                                                    class="tagname">/h1</span>
+                                                                                                <span
+                                                                                                    class="ltgt">></span>
+                                                                                                <br>
+                                                                                                <span class="ltgt">
+                                                                                                    << /span>
+                                                                                                        <span
+                                                                                                            class="tagname">p</span>
+                                                                                                        <span
+                                                                                                            class="ltgt">></span>
+                                                                                                        <span
+                                                                                                            class="exambody">This
+                                                                                                            is a
+                                                                                                            Paragraph</span>
+                                                                                                        <span
+                                                                                                            class="ltgt">
+                                                                                                            << /span>
+                                                                                                                <span
+                                                                                                                    class="tagname">/p</span>
+                                                                                                                <span
+                                                                                                                    class="ltgt">></span>
+                                                                                                                <br>
+                                                                                                                <br>
+                                                                                                                <span
+                                                                                                                    class="ltgt">
+                                                                                                                    <<
+                                                                                                                        /span>
+                                                                                                                        <span
+                                                                                                                            class="tagname">/body</span>
+                                                                                                                        <span
+                                                                                                                            class="ltgt">></span>
+                                                                                                                        <br>
+                                                                                                                        <span
+                                                                                                                            class="ltgt">
+                                                                                                                            <<
+                                                                                                                                /span>
+                                                                                                                                <span
+                                                                                                                                    class="tagname">/html</span>
+                                                                                                                                <span
+                                                                                                                                    class="ltgt">></span>
+                    </div>
+                    <div class="Study">
+                        <a href="" class="buttons">Try it Yourself >></a>
+                    </div>
+                </div>
+                <div class="try">
+                    Click on the "Try it Yourself" button to see how it works.
+                </div>
+            </div>
+            <hr>
+            <div class="forth">
+                <h1 class="heading2">HTML Examples</h1>
+                <div class="try">
+                    In this HTML tutorial, you will find more than 200 examples. With our online "Try it Yourself"
+                    editor, you can edit and test each example yourself!
+                    <div class="Study examhtml">
+                        <a href="" class="buttons">Go to HTML Examples!</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="fifth">
+                <h1 class="heading2">HTML Exercises</h1>
+                <div class="try">
+                    This HTML tutorial also contains nearly 100 HTML exercises.
+                </div>
+                <div class="example example1">
+                    Test Yourself With Exercises
+                    <div class="exambox exambox1">
+                        <div class="heading2">Exercise:</div>
+                        <div class="try">
+                            Add a "tooltip" to the paragraph below with the text "About W3Schools".
+                        </div>
+                        <div class="exambox2">
+                            &lt;p <span> <input type="text" maxlength="5" id="text"></span> ="About W3Schools">W3Schools
+                            is a web developer's site.&lt;/p&gt;
+                        </div>
+                        <div class="Study">
+                            <a href="#" class="buttons" style="margin-left: 1rem;">Submit Answer >></a>
+                        </div>
+                        <div class="exerlink">
+                            <a href="#" class="exerlink">Start the Exercise</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sixth">
+                <h1 class="heading2">HTML Quiz Test</h1>
+                <div class="try">
+                    Test your HTML skills with our HTML Quiz!
+                </div>
+                <div class="Study quizhtml">
+                    <a href="#" class="buttons">Start HTML Quiz!</a>
+                </div>
+            </div>
+            <hr>
+            <div class="seventh">
+                <h1 class="heading2">HTML References</h1>
+                <div class="try">
+                    At W3Schools you will find complete references about HTML elements, attributes, events, color names,
+                    entities, character-sets, URL encoding, language codes, HTTP messages, browser support, and more:
+                </div>
+                <div class="refer">
+                    <a href="" class="references">HTML Elements</a>
+                    <a href="" class="references">Browser Support</a>
+                    <a href="" class="references">Attributes</a>
+                    <a href="" class="references">Global Attributes</a>
+                    <a href="" class="references">Event Attributes</a>
+                    <a href="" class="references">Color Names</a>
+                    <a href="" class="references">Canvas</a>
+                    <a href="" class="references">Audio/Video DOM</a>
+                    <a href="" class="references">Character-Sets</a>
+                    <a href="" class="references">URL Encoding</a>
+                    <a href="" class="references">Language Codes</a>
+                    <a href="" class="references">Country Codes</a>
+                    <a href="" class="references">HTTP Messages</a>
+                    <a href="" class="references">Px to Em Converter</a>
+                    <a href="" class="references">Keyboard Shortcuts</a>
+                </div>
+            </div>
+            <div class="eigth">
+                <div class="example example1 kickbox">
+                    <div class="kick">
+                        Kickstart your career
+                    </div>
+                    <div class="kick kicktext">
+                        Get certified by completing the HTML course
+                    </div>
+                    <div class="Study kickbtn">
+                        <a href="#" class="buttons">Get Certified</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigate navigate2">
+                <a href="" class="buttons">
+                    &lt; Home</a>
+                <a href="" class="buttons">Next &gt;</a>
+            </div>
+            <hr>
+            <div class="refer">
+                <a href="#" class="references references2">Report Error</a>
+                <a href="#" class="references references2">Forum</a>
+                <a href="#" class="references references2">About</a>
+                <a href="#" class="references references2">Buy Cirtificate</a>
+            </div>
+            <hr>
+            <div class="ninth">
+                <div class="footbox">
+                    <div class="foothead">
+                        <h3>Top Tutorials</h3>
+                    </div>
+                    <a href="#" class="footlink">HTML Tutorial</a>
+                    <a href="#" class="footlink">CSS Tutorial</a>
+                    <a href="#" class="footlink">JavaScript Tutorial</a>
+                    <a href="#" class="footlink">How To Tutorial</a>
+                    <a href="#" class="footlink">SQL Tutorial</a>
+                    <a href="#" class="footlink">Python Tutorial</a>
+                    <a href="#" class="footlink">W3.CSS Tutorial</a>
+                    <a href="#" class="footlink">Bootstrap Tutorial</a>
+                    <a href="#" class="footlink">PHP Tutorial</a>
+                    <a href="#" class="footlink">Java Tutorial</a>
+                    <a href="#" class="footlink">C++ Tutorial</a>
+                    <a href="#" class="footlink">jQuery Tutorial</a>
+                </div>
+                <div class="footbox">
+                    <div class="foothead">
+                        <h3>Top References</h3>
+                    </div>
+                    <a href="#" class="footlink">HTML Reference</a>
+                    <a href="#" class="footlink">CSS Reference</a>
+                    <a href="#" class="footlink">JavaScript Reference</a>
+                    <a href="#" class="footlink">SQL Reference</a>
+                    <a href="#" class="footlink">Python Reference</a>
+                    <a href="#" class="footlink">W3.CSS Reference</a>
+                    <a href="#" class="footlink">Bootstrap Reference</a>
+                    <a href="#" class="footlink">PHP Reference</a>
+                    <a href="#" class="footlink">HTML Colors</a>
+                    <a href="#" class="footlink">Java Reference</a>
+                    <a href="#" class="footlink">Angular Reference</a>
+                    <a href="#" class="footlink">jQuery Reference</a>
+                </div>
+                <div class="footbox">
+                    <div class="foothead">
+                        <h3>Top Examples</h3>
+                    </div>
+                    <a href="#" class="footlink">HTML Examples</a>
+                    <a href="#" class="footlink">CSS Examples</a>
+                    <a href="#" class="footlink">JavaScript Examples</a>
+                    <a href="#" class="footlink">How To Examples</a>
+                    <a href="#" class="footlink">SQL Examples</a>
+                    <a href="#" class="footlink">Python Examples</a>
+                    <a href="#" class="footlink">W3.CSS Examples</a>
+                    <a href="#" class="footlink">Bootstrap Examples</a>
+                    <a href="#" class="footlink">PHP Examples</a>
+                    <a href="#" class="footlink">Java Examples</a>
+                    <a href="#" class="footlink">XML Examples</a>
+                    <a href="#" class="footlink">jQuery Examples</a>
+                </div>
+                <div class="footbox">
+                    <div class="foothead">
+                        <h3>Web Courses</h3>
+                    </div>
+                    <a href="#" class="footlink">HTML Course</a>
+                    <a href="#" class="footlink">CSS Course</a>
+                    <a href="#" class="footlink">JavaScript Course</a>
+                    <a href="#" class="footlink">Front End Course</a>
+                    <a href="#" class="footlink">SQL Course</a>
+                    <a href="#" class="footlink">Python Course</a>
+                    <a href="#" class="footlink">PHP Course</a>
+                    <a href="#" class="footlink">jQuery Course</a>
+                    <a href="#" class="footlink">Java Course</a>
+                    <a href="#" class="footlink">C++ Course</a>
+                    <a href="#" class="footlink">C# Course</a>
+                    <a href="#" class="footlink">XML Course</a>
+                </div>
+            </div>
+            <div class="Study kickbtn footbtn">
+                <a href="#" class="buttons">Get Certified >></a>
+            </div>
+            <hr>
+            <div class="footer">
+                W3Schools is optimized for learning and training. Examples might be simplified to improve reading and
+                learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+                warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our
+                terms of use, cookie and privacy policy. <br><br>
+                Copyright 1999-2022 by Refsnes Data.
+                All Rights Reserved.<br>
+                W3Schools is Powered by W3.CSS.
+            </div>
+            <div class="footlogo">
+                <a href="" id="logo footlogo">
+                    <img src="w3logo.png" alt="" width="44px" height="42px">
+                </a>
+            </div>
+    </section>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const leftside = document.querySelector(".leftside");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            leftside.classList.toggle("active");
+        })
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

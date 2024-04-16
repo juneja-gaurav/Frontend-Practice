@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container-xxl {
+    max-width: 1366px;
+}
+
+.f_pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.f_play {
+    font-family: 'Playfair Display', serif;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_300 {
+    font-weight: 300;
+}
+
+.fs_14 {
+    font-size: 14px;
+}
+
+.fs_16 {
+    font-size: 16px;
+}
+
+.fs_72 {
+    font-size: 72px;
+}
+
+.fs_24 {
+    font-size: 24px;
+}
+
+.fs_20 {
+    font-size: 20px;
+}
+
+.fs_48 {
+    font-size: 48px;
+}
+
+.fs_18 {
+    font-size: 18px;
+}
+
+.p_10_22 {
+    padding: 10px 22px !important;
+}
+
+.bg_color_red {
+    background-color: #BD0004;
+}
+
+/* hero_secion */
+.bg_img_hero {
+    background-image: url("../img/png/Hero_Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+.h_75 {
+    height: 75vh;
+}
+
+.text_red {
+    color: #BD0004;
+}
+
+.p_16_22 {
+    padding: 16px 22px;
+}
+
+.opacity_60 {
+    opacity: 60%;
+}
+
+/* section-1 */
+
+.w_100 {
+    width: 100%;
+}
+
+.text-gray {
+    color: #767676
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg_color_gray {
+    background: #F1F1F1;
+    border: 1px solid #F4F4F4;
+}
+
+.bg_white {
+    background-color: white;
+}
+
+.color_red_btn {
+    color: #BD0004;
+    border: 1.3px solid #BD0004;
+}
+
+.color_red_btn:hover {
+    color: white;
+    background: #BD0004;
+}
+
+.shadow:hover {
+    background-color: white;
+}
+
+/* Section-2 */
+
+.bottom_ {
+    bottom: 35px;
+}
+
+.left_ {
+    left: 170px;
+}

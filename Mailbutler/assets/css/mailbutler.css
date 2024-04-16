@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.f_pop {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.f_open {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.fw_300 {
+    font-weight: 300;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+
+.fw_800 {
+    font-weight: 800;
+}
+
+.fw_900 {
+    font-weight: 900;
+}
+
+/* Navbar */
+.container_nav {
+    max-width: 1660px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.box_nav {
+    box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.border_blue {
+    background: #4B75BE;
+    border-radius: 100px;
+}
+
+/* Hero Section */
+
+.container_hero {
+    max-width: 1720px;
+    height: 956px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.bg_img_hero {
+    background: url("../img/png/bg_hero.png");
+}
+
+.fs_14 {
+    font-size: 14px;
+}
+
+.text_gray {
+    color: #7C7C7C;
+}
